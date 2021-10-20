@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-image: linear-gradient(120deg, rgb(252, 150, 238) , rgb(247, 33, 175));
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    min-height: 5000px;
+}
+header{
+    font-size: 30px;
+}
+header ,form{
+    min-height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    padding: 7px;
+    font-size: 30px;
+    border: none;
+    background-color: whitesmoke;
+}
+form button{
+    color: rgb(252, 150, 238);
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+form button:hover{
+    background: rgb(252, 150, 238) ;
+    color: whitesmoke;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 5px;
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+.todo li {
+    flex: 1px;
+}
+.check-btn,.trash-btn{
+    background-color: rgb(252, 150, 238);
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.trash-btn{
+    background-color: rgb(173, 49, 111);
+}
+.check-btn{
+    background-color: rgb(85, 20, 52);
+}
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+.fall{
+    transform: translateY(8rem) rotate(20deg);
+    opacity: 0;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none ;
+    outline: none;
+    border: none;
+}
+select{
+    background-color: whitesmoke;
+    color:rgb(252, 150, 238);
+    width:100px;
+    cursor: pointer;
+    padding: 5px;
+}
+.select{
+    margin: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: rgb(252, 150, 238) ;
+    top:0;
+    right:0;
+    padding:1px;
+    width: 30px;
+    pointer-events: none;
+    transition: 0,7s ease;
+    
+}
+.select:hover:after{
+    background: rgb(173, 49, 111);
+    color: rgb(252, 150, 238);
+    
+
+}
+ 
